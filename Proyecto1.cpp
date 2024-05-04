@@ -1,6 +1,5 @@
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
-#include <GL/glut.h>
 #include "Circulo.h"
 #include "Ventana.h"
 #include <math.h>
