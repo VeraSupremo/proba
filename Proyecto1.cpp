@@ -1,5 +1,6 @@
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
+#include <GL/glut.h>
 #include "Circulo.h"
 #include "Ventana.h"
 #include <math.h>
@@ -10,6 +11,7 @@ const unsigned int SCR_HEIGHT=600;
 
 void processInput(GLFWwindow *windows, Circulo circulo,Ventana ventana)
 {
+    
     if(glfwGetKey(windows, GLFW_KEY_ESCAPE) == GLFW_PRESS) glfwSetWindowShouldClose(windows, true);
     if(glfwGetKey(windows, GLFW_KEY_1) == GLFW_PRESS)circulo.change_Color(0.2f,0,0);
     if(glfwGetKey(windows, GLFW_KEY_2) == GLFW_PRESS)circulo.change_Color(0,0.2f,0);
@@ -22,7 +24,7 @@ void processInput(GLFWwindow *windows, Circulo circulo,Ventana ventana)
 }
 
 void framebuffer_size_callback(GLFWwindow* windows, int width, int height)
-{
+{   
     glViewport(0, 0,width,height);
 }
 float RC(){
