@@ -1,3 +1,6 @@
+#ifndef CIRCULO_H
+#define CIRCULO_H
+
 class Circulo{
     public:    
         double X,Y,A,H;//cordenada X, Coordenada Y, Alto, Ancho.
@@ -10,3 +13,5 @@ class Circulo{
         void change_Size(double cambio,double width,double height,int opcion);
         ~Circulo();
 };
+
+#endif

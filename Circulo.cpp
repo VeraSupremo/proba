@@ -1,4 +1,4 @@
-#include <iostream>
+//#include <iostream>
 #include <math.h>
 #include "Circulo.h"
 
@@ -62,3 +62,5 @@ void Circulo :: change_Size(double cambio,double width,double height,int opcion)
             break;
     };
 }
+
+Circulo::~Circulo(){}
