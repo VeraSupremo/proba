@@ -5,8 +5,13 @@
 #include "Ventana.h"
 #include <math.h>
 #include <random>
+//#include <GL/glut.h>
 const unsigned int SCR_WIDTH=800;
 const unsigned int SCR_HEIGHT=600;
+
+//consejos ara probarlo:
+//   probar el ejemplo
+// si funciona empezar a hacer el circulo y dejar todo en un solo codigo
 
 void processInput(GLFWwindow *windows, Circulo circulo,Ventana ventana)
 {
